@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios 11 e 12 PHP</title>
+</head>
+<body>
+<!--     
+    Crie um aplicativo (utilize formulário) de conversão entre as temperaturas Celsius e Farenheit.
+    Primeiro o usuário deve escolher se vai entrar com a temperatura em Célsius ou Farenheit, depois a conversão escolhida é realizada através de um comando SWITCH.
+    Se C é a temperatura em Célsius e F em farenheit, as fórmulas de conversão são:
+    C= 5.(F-32)/9
+    F= (9.C/5) + 32
+ -->
+    <form method="POST" action="exercicio11.php">
+        <fieldset>
+            <legend>Exercício 11</legend>
+            <p>Crie um aplicativo (utilize formulário) de conversão entre as temperaturas Celsius e Farenheit.
+                Primeiro o usuário deve escolher se vai entrar com a temperatura em Célsius ou Farenheit, depois a conversão escolhida é realizada através de um comando SWITCH.
+                Se C é a temperatura em Célsius e F em farenheit, as fórmulas de conversão são:
+                C= 5.(F-32)/9
+                F= (9.C/5) + 32
+            </p>
+            <div name="temperatura">
+                <label><strong>Para qual temperatura deseja converter?</strong></label><br>
+                <input type="radio"  value="celsius" name="temperatura">
+                <label for="temperatura">Celsius</label>
+                <input type="radio" value="farenheit" name="temperatura">
+                <label for="temperatura">Farenheit</label>
+            </div>
+            <label for="valor_temperatura">Entre com o valor: </label>
+            <input type="number" name="valor_temperatura" value="vTemperatura"><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+
+    <form method="POST" action="exercicio12.php">
+        <fieldset>
+            <legend>Exercício 12</legend>
+            <p>Uma professora, muito legal, fez 3 provas durante um semestre mas só vai levar em conta 
+                as duas notas mais altas para calcular a média. Faça uma aplicação em PHP (utilize formulário) 
+                que peça o valor das 3 notas, mostre como seria a média com essas 3 provas, a média com 
+                as 2 notas mais altas, bem como sua nota mais alta e sua nota mais baixa.
+            </p>
+            <label>Entre com as três notas </label>
+            <input type="number" name="nota1">
+            <input type="number" name="nota2">
+            <input type="number" name="nota3">
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+
+
+    </form>
+    
+</body>
+</html>
